@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_shape_bottom">
+
+
+        <TextView
+            android:id="@+id/text_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            tools:text="오늘의 일정" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/change_button"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_radius"
+            android:text="수정"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_gravity="right"
+            android:background="@drawable/button_radius"
+            android:text="삭제"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>
